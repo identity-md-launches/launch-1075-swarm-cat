@@ -20,5 +20,5 @@
     "initialMarketCapWei": "2500000000000000000000",
     "remainderTo": "0x000000000000000000000000000000000000dead"
   },
-  "notes": "Ethereum mainnet (chain ID 1). The token mints all 1e27 units to its deployer. The launch factory handles the swarm allocation, pool seeding and remainder. PoolManager: 0x000000000004444c5dc75cB358380D2e3dE08A90. initialPrice is provenance-only sqrtPriceX96 for SCAT as currency0; the deployer derives the opening price from economics and the deployed currency order."
+  "notes": "Ethereum mainnet (chainId 1). SCATToken takes no constructor arguments and mints all 1,000,000,000 SCAT (1e27 minor units, 18 decimals) once to msg.sender. The supply is fixed forever, with no later minting or burning. Transfers have no fee, tax or limit. There are no owner or admin functions, proxies, upgrades, transfer hooks or external calls. The entire supply remains with the deployer for launch distribution. No additional application contracts or initialization calls. pool.initialPrice is provenance-only sqrtPriceX96 with SCAT as currency0; the deployer derives the opening price from economics.initialMarketCapWei, token.totalSupply and the deployed currency order."
 }

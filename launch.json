@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SCATToken",
+    "name": "swarm cat",
+    "symbol": "SCAT",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {
+    "poolBps": 9000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x000000000000000000000000000000000000dead"
+  },
+  "notes": "Ethereum mainnet (chain ID 1). The token mints all 1e27 units to its deployer. The launch factory handles the swarm allocation, pool seeding and remainder. PoolManager: 0x000000000004444c5dc75cB358380D2e3dE08A90. initialPrice is provenance-only sqrtPriceX96 for SCAT as currency0; the deployer derives the opening price from economics and the deployed currency order."
+}
